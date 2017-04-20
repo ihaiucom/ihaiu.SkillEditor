@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{296864F8-AF99-4BEC-AB39-620EB50AE578}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>PlayMakerEditor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine" />
+    <Reference Include="UnityEditor" />
+    <Reference Include="PlayMaker" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="PlayMakerEditorResources" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HutongGames.Editor\BaseControl.cs" />
+    <Compile Include="HutongGames.Editor\EditableLabel.cs" />
+    <Compile Include="HutongGames.Editor\EditorHacks.cs" />
+    <Compile Include="HutongGames.Editor\GUIHelpers.cs" />
+    <Compile Include="HutongGames.Editor\PopupMenu.cs" />
+    <Compile Include="HutongGames.Editor\PopupWindow.cs" />
+    <Compile Include="HutongGames.Editor\PopupWindowManager.cs" />
+    <Compile Include="HutongGames.Editor\SearchBox.cs" />
+    <Compile Include="HutongGames.Editor\StringHelper.cs" />
+    <Compile Include="HutongGames.Editor\TextField.cs" />
+    <Compile Include="HutongGames.Editor\UndoUtility.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\AboutPlaymaker.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ActionEditor.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ActionReportWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Actions.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ActionScripts.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ActionSelector.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ActionTargets.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ActionUtility.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ArrayUtility.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\BaseEditorWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\BezierLink.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\BugReportWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\CanvasView.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\CircuitLink.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\CustomActionEditor.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\CustomActionEditorAttribute.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\CustomActionEditors.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\CustomActionWizard.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\CustomAttributeHelpers.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\DebugFlow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\DebugToolbar.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Dialogs.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\DocHelpers.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\DragAndDropManager.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\DrawState.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\EditorApp.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\EditorCommands.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ErrorSelector.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Events.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Files.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmBuilder.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmDebugger.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmDrawState.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmEditor.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmEditorContent.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmEditorGUILayout.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmEditorMacros.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmEditorSettings.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmEditorStyles.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmEditorUtility.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmError.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmErrorChecker.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmEventManager.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmGraphView.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmInfo.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmInspector.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmLogger.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmPrefabs.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmSearch.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmSelection.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmSelectionHistory.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmSelector.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmTemplateSelector.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmVariable.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\FsmVariablesEditor.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\GameState.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\GameStateTracker.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Gizmos.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\GlobalEventsWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\GlobalsAsset.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\GlobalVariablesWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\GraphViewLinkStyle.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\InspectorMode.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\InspectorPanel.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Keyboard.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Labels.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Link.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Localization.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\MainToolbar.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Menus.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\NewEventWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\NewVariableWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ObjectPropertyDrawer.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ObjectPropertyDrawerAttribute.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ObjectPropertyDrawers.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\PackageExporter.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\PlayMakerBuildCallbacks.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\PlayMakerEditorPrefs.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\PlayMakerGUIDs.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\PlayMakerPaths.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\PopupListWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\PropertyDrawer.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\PropertyDrawerAttribute.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\PropertyDrawers.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\SceneGUI.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\SearchWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\StateInspector.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\StateSelector.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Templates.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\TimelineControl.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\TimelineWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\ToolWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\TrueFalseOption.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\TypeHelpers.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\VariableEditor.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\VariableManager.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\VersionInfo.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\Watermarks.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\WatermarkSelector.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\WelcomeWindow.cs" />
+    <Compile Include="HutongGames.PlayMakerEditor\WikiPages.cs" />
+    <Compile Include="LineDrawer.cs" />
+    <Compile Include="PlayMakerDocHelpers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.backButton.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.backIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.backIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.bb10Icon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.breakIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.breakpointOff.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.breakpointOn.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.broadcastIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.broadcastIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.browseIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.browseIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.browserIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.browserIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.darkPreviewBg.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.deleteIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.deleteIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.divider.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.dividerSequence.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.downIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.downIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.dropShadowBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.errorBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.errorCount.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.errorIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.errorSpacer.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.forwardIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.forwardIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.globalArrow.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.globalTransitionBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.globalTransitionBox_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.graphBackground.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.graphBackground_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.helpIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.hintBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.infoBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.infoBox_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.innerGlowBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.innerShadowBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.leftArrow.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.line.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.linkAddons.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.linkBasics.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.linkDocs.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.linkForums.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.linkSamples.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.linkVideos.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.logEntryBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.logErrorIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.logInfoIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.logTransitionIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.logWarningIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.metroIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.minimapIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.minimapIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.noErrors.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.outerGlow.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.pasteDivider.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.pauseButton.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.pauseIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.photonIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.playButton.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.playIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.playMakerBeta.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.playMakerHeader.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.playMakerLogo.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.playMakerWatermark.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.recentIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.recentIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.rightArrow.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.selectedColor.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.selectedColor_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.selectionRect.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.settingsIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.settingsIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.singlePixelFrame.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.smallLeftArrow.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.smallRightArrow.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.startArrow.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.startTransitionBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.startTransitionBox_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.stateBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.stateTitleBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.stepButton.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.swatchBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.tableRowBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.timelineBar.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.transitionBox.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.transitionBoxSelected.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.upIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.upIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.variableIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.variableIcon_indie.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.wanIcon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.wanLarge.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.whiteVertical.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.wp8Icon.png" />
+    <EmbeddedResource Include="HutongGames.PlayMakerEditor\Playmaker.source.unity.Assets.PlayMaker.Editor.Resources.yellow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

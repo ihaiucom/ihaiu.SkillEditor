@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{666C4215-31B1-4A26-B42F-6E8065FC6261}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>PlayMaker</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FsmTemplate.cs" />
+    <Compile Include="HutongGames.Extensions\RectExtensions.cs" />
+    <Compile Include="HutongGames.Extensions\TextureExtensions.cs" />
+    <Compile Include="HutongGames.PlayMaker.Actions\MissingAction.cs" />
+    <Compile Include="HutongGames.PlayMaker\ActionCategory.cs" />
+    <Compile Include="HutongGames.PlayMaker\ActionCategoryAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\ActionData.cs" />
+    <Compile Include="HutongGames.PlayMaker\ActionHelpers.cs" />
+    <Compile Include="HutongGames.PlayMaker\ActionReport.cs" />
+    <Compile Include="HutongGames.PlayMaker\ActionSection.cs" />
+    <Compile Include="HutongGames.PlayMaker\ActionTarget.cs" />
+    <Compile Include="HutongGames.PlayMaker\ArrayEditorAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\ArrayVariableTypesNicified.cs" />
+    <Compile Include="HutongGames.PlayMaker\CheckForComponentAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\Collision2DType.cs" />
+    <Compile Include="HutongGames.PlayMaker\CollisionType.cs" />
+    <Compile Include="HutongGames.PlayMaker\CompoundArrayAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\DebugUtils.cs" />
+    <Compile Include="HutongGames.PlayMaker\DelayedEvent.cs" />
+    <Compile Include="HutongGames.PlayMaker\EventTargetAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\Fsm.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmAnimationCurve.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmArray.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmBool.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmColor.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmDebugUtility.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmEnum.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmEvent.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmEventData.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmEventTarget.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmExecutionStack.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmFloat.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmGameObject.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmInt.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmLog.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmLogEntry.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmLogType.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmMaterial.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmObject.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmOwnerDefault.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmProperty.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmQuaternion.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmRect.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmState.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmStateAction.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmString.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmTemplateControl.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmTexture.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmTime.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmTransition.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmUtility.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmVar.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmVariables.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmVarOverride.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmVector2.cs" />
+    <Compile Include="HutongGames.PlayMaker\FsmVector3.cs" />
+    <Compile Include="HutongGames.PlayMaker\FunctionCall.cs" />
+    <Compile Include="HutongGames.PlayMaker\HasFloatSliderAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\HelpUrlAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\HideTypeFilter.cs" />
+    <Compile Include="HutongGames.PlayMaker\IFsmStateAction.cs" />
+    <Compile Include="HutongGames.PlayMaker\INameable.cs" />
+    <Compile Include="HutongGames.PlayMaker\INamedVariable.cs" />
+    <Compile Include="HutongGames.PlayMaker\InterpolationType.cs" />
+    <Compile Include="HutongGames.PlayMaker\LayoutOption.cs" />
+    <Compile Include="HutongGames.PlayMaker\LogLevel.cs" />
+    <Compile Include="HutongGames.PlayMaker\MatchElementTypeAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\MatchFieldTypeAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\MouseButton.cs" />
+    <Compile Include="HutongGames.PlayMaker\MouseEventType.cs" />
+    <Compile Include="HutongGames.PlayMaker\NamedVariable.cs" />
+    <Compile Include="HutongGames.PlayMaker\NoActionTargetsAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\None.cs" />
+    <Compile Include="HutongGames.PlayMaker\NoteAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\ObjectTypeAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\OwnerDefaultOption.cs" />
+    <Compile Include="HutongGames.PlayMaker\ParamDataType.cs" />
+    <Compile Include="HutongGames.PlayMaker\ReflectionUtils.cs" />
+    <Compile Include="HutongGames.PlayMaker\RequiredFieldAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\TitleAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\TooltipAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\Trigger2DType.cs" />
+    <Compile Include="HutongGames.PlayMaker\TriggerType.cs" />
+    <Compile Include="HutongGames.PlayMaker\UIHint.cs" />
+    <Compile Include="HutongGames.PlayMaker\UIHintAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\VariableType.cs" />
+    <Compile Include="HutongGames.PlayMaker\VariableTypeAttribute.cs" />
+    <Compile Include="HutongGames.PlayMaker\VariableTypeFilter.cs" />
+    <Compile Include="HutongGames.PlayMaker\VariableTypeNicified.cs" />
+    <Compile Include="HutongGames.Utility\Arrays.cs" />
+    <Compile Include="HutongGames.Utility\ColorUtils.cs" />
+    <Compile Include="HutongGames.Utility\Lists.cs" />
+    <Compile Include="HutongGames.Utility\StringUtils.cs" />
+    <Compile Include="PlayMakerAnimatorIK.cs" />
+    <Compile Include="PlayMakerAnimatorMove.cs" />
+    <Compile Include="PlayMakerApplicationEvents.cs" />
+    <Compile Include="PlayMakerCollisionEnter.cs" />
+    <Compile Include="PlayMakerCollisionEnter2D.cs" />
+    <Compile Include="PlayMakerCollisionExit.cs" />
+    <Compile Include="PlayMakerCollisionExit2D.cs" />
+    <Compile Include="PlayMakerCollisionStay.cs" />
+    <Compile Include="PlayMakerCollisionStay2D.cs" />
+    <Compile Include="PlayMakerControllerColliderHit.cs" />
+    <Compile Include="PlayMakerFixedUpdate.cs" />
+    <Compile Include="PlayMakerFSM.cs" />
+    <Compile Include="PlayMakerGlobals.cs" />
+    <Compile Include="PlayMakerGUI.cs" />
+    <Compile Include="PlayMakerJointBreak.cs" />
+    <Compile Include="PlayMakerJointBreak2D.cs" />
+    <Compile Include="PlayMakerMouseEvents.cs" />
+    <Compile Include="PlayMakerOnGUI.cs" />
+    <Compile Include="PlayMakerParticleCollision.cs" />
+    <Compile Include="PlayMakerPrefs.cs" />
+    <Compile Include="PlayMakerProxyBase.cs" />
+    <Compile Include="PlayMakerTriggerEnter.cs" />
+    <Compile Include="PlayMakerTriggerEnter2D.cs" />
+    <Compile Include="PlayMakerTriggerExit.cs" />
+    <Compile Include="PlayMakerTriggerExit2D.cs" />
+    <Compile Include="PlayMakerTriggerStay.cs" />
+    <Compile Include="PlayMakerTriggerStay2D.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
