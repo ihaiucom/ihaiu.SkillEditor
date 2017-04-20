@@ -46,10 +46,16 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Skill\Editor\BaseEditorWindow.cs" />
+     <Compile Include="Assets\Skill\Editor\CanvasView.cs" />
      <Compile Include="Assets\Skill\Editor\EditorApp.cs" />
      <Compile Include="Assets\Skill\Editor\EditorCommands.cs" />
      <Compile Include="Assets\Skill\Editor\Files.cs" />
+     <Compile Include="Assets\Skill\Editor\FsmDebugger.cs" />
+     <Compile Include="Assets\Skill\Editor\FsmGraphView.cs" />
+     <Compile Include="Assets\Skill\Editor\InspectorPanel.cs" />
      <Compile Include="Assets\Skill\Editor\Labels.cs" />
+     <Compile Include="Assets\Skill\Editor\MainToolbar.cs" />
+     <Compile Include="Assets\Skill\Editor\SkillBuilder.cs" />
      <Compile Include="Assets\Skill\Editor\SkillEditor.cs" />
      <Compile Include="Assets\Skill\Editor\SkillEditorContent.cs" />
      <Compile Include="Assets\Skill\Editor\SkillEditorGUILayout.cs" />
@@ -58,6 +64,8 @@
      <Compile Include="Assets\Skill\Editor\SkillEditorStyles.cs" />
      <Compile Include="Assets\Skill\Editor\SkillEditorWindow.cs" />
      <Compile Include="Assets\Skill\Editor\SkillPrefabs.cs" />
+     <Compile Include="Assets\Skill\Editor\SkillSelection.cs" />
+     <Compile Include="Assets\Skill\Editor\SkillSelectionHistory.cs" />
      <Compile Include="Assets\Skill\Editor\Strings.cs" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>

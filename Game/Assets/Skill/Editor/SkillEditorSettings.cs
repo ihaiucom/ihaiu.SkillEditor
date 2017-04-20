@@ -77,5 +77,11 @@ namespace ihaiu
             get;
             set;
         }
+
+        public static bool GraphViewShowMinimap
+        {
+            get;
+            set;
+        }
     }
 }

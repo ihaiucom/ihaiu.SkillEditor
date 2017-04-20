@@ -17,6 +17,8 @@ namespace ihaiu
         public static string Label_Editor_disabled_when_playing             = "Editor disabled when playing";
         public static string Label_Enable_Editor_When_Playing             = "Enable Editor When Playing";
 
+        public static string Hint_Select_Game_Object             = "Select Game Object";
+
 
 
         public static string Label_Favorites             = "Favorites";
