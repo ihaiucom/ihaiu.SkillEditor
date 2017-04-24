@@ -87,21 +87,21 @@ namespace ihaiu
                         break;
                     */
 
-                    case "Cut":
-                        SkillEditor.Cut();
-                        break;
-
-                    case "Copy":
-                        SkillEditor.Copy();
-                        break;
-
-                    case "Paste":
-                        SkillEditor.Paste();
-                        break;
-
-                    case "SelectAll":
-                        SkillEditor.SelectAll();
-                        break;
+//                    case "Cut":
+//                        SkillEditor.Cut();
+//                        break;
+//
+//                    case "Copy":
+//                        SkillEditor.Copy();
+//                        break;
+//
+//                    case "Paste":
+//                        SkillEditor.Paste();
+//                        break;
+//
+//                    case "SelectAll":
+//                        SkillEditor.SelectAll();
+//                        break;
 
 //                    case "OpenWelcomeWindow":
 //                        GetWindow<PlayMakerWelcomeWindow>();

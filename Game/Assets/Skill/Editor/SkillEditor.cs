@@ -661,22 +661,22 @@ namespace ihaiu
 //            FsmErrorChecker.Update();
 //            DragAndDropManager.Update();
         }
-        private static bool HandleDelayedSelection()
-        {
-            if (SkillEditor.selectTemplateDelayed)
-            {
-                SkillEditor.SelectFsm(SkillEditor.selectTemplateDelayed.fsm);
-                SkillEditor.selectTemplateDelayed = null;
-                return true;
-            }
-            if (SkillEditor.selectFsmDelayed != null)
-            {
-                SkillEditor.SelectFsm(SkillEditor.selectFsmDelayed);
-                SkillEditor.selectFsmDelayed = null;
-                return true;
-            }
-            return false;
-        }
+//        private static bool HandleDelayedSelection()
+//        {
+//            if (SkillEditor.selectTemplateDelayed)
+//            {
+//                SkillEditor.SelectFsm(SkillEditor.selectTemplateDelayed.fsm);
+//                SkillEditor.selectTemplateDelayed = null;
+//                return true;
+//            }
+//            if (SkillEditor.selectFsmDelayed != null)
+//            {
+//                SkillEditor.SelectFsm(SkillEditor.selectFsmDelayed);
+//                SkillEditor.selectFsmDelayed = null;
+//                return true;
+//            }
+//            return false;
+//        }
         public void OnSelectionChange()
         {
 //            if (this.lastSelectedObject == UnityEditor.Selection.get_activeObject())

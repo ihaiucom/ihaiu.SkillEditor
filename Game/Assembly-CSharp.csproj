@@ -49,6 +49,7 @@
      <Compile Include="Assets\Skill\PlayMakerPrefs.cs" />
      <Compile Include="Assets\Skill\Skill.cs" />
      <Compile Include="Assets\Skill\SkillEvent.cs" />
+     <Compile Include="Assets\Skill\SkillState.cs" />
      <Compile Include="Assets\Skill\SkillTemplate.cs" />
      <Compile Include="Assets\Skill\SkillTransition.cs" />
  <Reference Include="UnityEngine.UI">

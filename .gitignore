@@ -1,0 +1,6 @@
+.DS_Store
+*/.DS_Store
+Game/obj*
+Game/Library
+Game/Library*
+Game/Temp*
